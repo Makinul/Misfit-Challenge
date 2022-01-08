@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/navStore">
+
+    <fragment
+        android:id="@+id/navStore"
+        android:name="tech.misfit.challenge.ui.store.StoreFragment"
+        android:label="@string/menu_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/navResult"
+        android:name="tech.misfit.challenge.ui.result.GalleryFragment"
+        android:label="@string/menu_result"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/navSummary"
+        android:name="tech.misfit.challenge.ui.summary.SummaryFragment"
+        android:label="@string/menu_summary"
+        tools:layout="@layout/fragment_summary" />
+</navigation>
